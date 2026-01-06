@@ -1,0 +1,7 @@
+Most Stable Stations:
+  Station DARWIN-AIRPORT: StdDev 1.20°C
+  Station HORN-ISLAND: StdDev 1.20°C
+
+Most Variable Stations:
+  Station RUTHERGLEN-RESEARCH: StdDev 6.90°C
+  Station WAGGA-WAGGA-AMO: StdDev 6.90°C
