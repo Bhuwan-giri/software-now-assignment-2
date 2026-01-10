@@ -1,5 +1,4 @@
 import turtle
-
 def draw_pattern(length, depth):
     if depth == 0:
         turtle.forward(length)
