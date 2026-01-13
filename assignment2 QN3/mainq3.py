@@ -1,6 +1,5 @@
 import turtle
 import math
-
 def draw_edge(length, depth):
     if depth == 0:
         turtle.forward(length)
