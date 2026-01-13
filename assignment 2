@@ -1,0 +1,38 @@
+import turtle
+def draw_edge(length, depth):
+    if depth == 0:
+        turtle.forward(length)
+    else:
+        length = length / 3
+        draw_edge(length, depth - 1)
+        turtle.right(60)
+
+        draw_edge(length, depth - 1)
+        turtle.left(120)
+
+        draw_edge(length, depth - 1)
+        turtle.right(60)
+
+        draw_edge(length, depth - 1)
+def draw_polygon(sides, side_length, depth):
+    angle = 360 / sides
+
+    for i in range(sides):
+        draw_edge(side_length, depth)
+        turtle.left(angle)
+sides = int(input("Enter number of sides: "))
+side_length = float(input("Enter side length (pixels): "))
+depth = int(input("Enter recursion depth: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("white")
+turtle.color("black")
+
+turtle.penup()
+turtle.goto(-side_length / 2, side_length / 3)
+turtle.pendown()
+
+draw_polygon(sides, side_length, depth)
+
+turtle.done()
